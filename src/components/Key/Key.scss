@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.drum-pad {
+  border: 1px solid $color-light;
+  width: 50px;
+  height: 110px;
+  background-color: $color-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: $color-primary;
+  cursor: pointer;
+}
+
+.drum-pad:hover {
+  @include design-hover;
+}

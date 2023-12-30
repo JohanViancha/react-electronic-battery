@@ -1,0 +1,39 @@
+@import '../../scss/variables';
+
+.drum-machine {
+  width: 600px;
+  height: 350px;
+  background-color: $color-primary;
+  border-radius: 10px;
+
+  .controls {
+    & .controls-actions {
+      & .volume {
+        &__label {
+          font-family: 'Open Sans', 'sans-serif';
+          color: $color-light;
+          display: block;
+          text-align: center;
+        }
+
+        &__volume {
+          display: block;
+          margin: 10px auto;
+          width: 200px;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  }
+
+  .box__keys {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+}

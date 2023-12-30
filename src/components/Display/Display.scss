@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.display {
+  cursor: default;
+  font-family: 'Pixelify Sans', sans-serif;
+  letter-spacing: 0.8px;
+  padding: 0 5px;
+  color: $color-light;
+  display: block;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+  background-color: $color-alternative;
+  border-top: 10px solid $color-dark;
+  border-bottom: 10px solid $color-dark;
+  border-right: 30px solid $color-dark;
+  border-left: 30px solid $color-dark;
+  margin: 20px auto;
+}
+
+.off {
+  background-color: $color-secundary;
+}

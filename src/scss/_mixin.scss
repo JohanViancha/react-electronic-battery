@@ -1,0 +1,11 @@
+
+
+@mixin design-hover{
+    background-color: $color-alternative;
+    color: $color-light;
+}
+
+@mixin design-disabled{
+    background-color: $color-gray;
+    color: $color-light;
+}

@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+
+.label {
+  font-family: 'Open Sans', 'sans-serif';
+  color: $color-light;
+  display: block;
+  text-align: center;
+}
+
+.volume {
+  display: block;
+  margin: 10px auto;
+  width: 200px;
+}

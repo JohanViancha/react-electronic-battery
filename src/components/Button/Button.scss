@@ -1,0 +1,23 @@
+@import '../../scss/mixin';
+@import '../../scss/variables';
+
+.button:hover {
+  @include design-hover;
+}
+
+.button:disabled {
+  @include design-disabled;
+}
+
+.button {
+  cursor: pointer;
+  color: $color-primary;
+  border: 1px solid $color-light;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: $color-light;
+}
+
+.active {
+  @include design-hover;
+}
