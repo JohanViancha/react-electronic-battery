@@ -47,7 +47,7 @@ const Instrument = () => {
     setText('');
     if (!isOn) {
       setSound(true);
-   
+
       return;
     }
     changeIcon(1);
@@ -98,10 +98,10 @@ const Instrument = () => {
         </div>
       </div>
       <div className='box__keys'>
-        {keyList.map(({ value }) => (
+        {keyList.map((key) => (
           <Key
-            key={value}
-            value={value}
+            key={key.value}
+            keyBoard={key}
             onPlay={onPlay}
           />
         ))}

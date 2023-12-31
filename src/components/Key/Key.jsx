@@ -1,19 +1,19 @@
 import React from 'react';
 import './Key.scss';
 
-const Key = ({ value, onPlay }) => {
+const Key = ({ keyBoard, onPlay }) => {
   return (
     <>
       <div
-        className='drum-pad'
-        onClick={(e) => onPlay(value)}
-        id={value.toLowerCase()}
+        className='drum-pad'  
+        onClick={(e) => onPlay(keyBoard.value)}
+        id={keyBoard.value.toLowerCase()}
       >
-        {value}
+        {keyBoard.value}
         <audio
-          src={`../../src/assets/audio/${value}.mp3`}
+          src={`https://s3.amazonaws.com/freecodecamp/drums/${keyBoard.audio}.mp3`}
           className='clip'
-          id={value}
+          id={keyBoard.value}
         >
         </audio>
       </div>
