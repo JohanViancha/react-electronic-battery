@@ -33,8 +33,7 @@ const Instrument = () => {
     }
 
     if (sound && isOn) {
-      const audioElement = document.getElementById(value);
-      const audio = new Audio(audioElement.src);
+      const audio = document.getElementById(value);
       audio.volume = volume;
       audio.play();
     }

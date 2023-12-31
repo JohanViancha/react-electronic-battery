@@ -4,13 +4,14 @@ import './Display.scss';
 const Display = ({ text, state }) => {
   return (
     <>
-      <input
-        readOnly
+      <span
         value={text}
         type='text'
         id='display'
         className={`display ${(!state ? 'off' : '').trim()}`}
-      />
+      >
+        {text}
+      </span>
     </>
   );
 };
